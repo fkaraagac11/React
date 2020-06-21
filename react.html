@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Test React</title>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link />
+    <body>
+        <div id="root">Hello World!</div>
+
+        <script type="text/babel">
+            const element = (
+                <section class="container">
+                    <div class="title">
+                        <h2>Our Reviews</h2>
+                        <div class="underline"></div>
+                    </div>
+                    <article class="review">
+                        <div class="img-container">
+                            <img id="person-img" src="fehmi.jpg" alt="fehmi" />
+                        </div>
+                        <h4 id="author">Fehmi Karaagac</h4>
+                        <p id="job">Web Developer</p>
+
+                        <p id="info">
+                            I specialized in Search Engine Optimization and User
+                            Interface (Front-End) Web Development. I have
+                            certification in Java Programming Language and
+                            Google Analytics and more. I have extensive
+                            knowledge of HTML5, CSS3,  JavaScript, VBScript,
+                            Automation Testing, Selenium, SEMRUSH, YOAST, etc.
+                            Furthermore, I have the ability to manage a team.
+                        </p>
+                        <div class="button-container">
+                            <button class="prev-btn">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="next-btn">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <button class="random-btn">suprise me</button>
+                    </article>
+                </section>
+            );
+            ReactDOM.render(element, document.getElementById("root"));
+        </script>
+    </body>
+</html>
