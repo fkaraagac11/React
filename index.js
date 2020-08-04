@@ -11,4 +11,4 @@ ReactDOM.render(
 );
 
 var Element = document.createElement("p");
-Element.innerHTML = "This is a pataghraf";
+Element.innerHTML = "This is a paragraph";
